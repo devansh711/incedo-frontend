@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import { Footer } from '../Components/footer'
-import { Navbar } from '../Components/navbar'
+import { Navbarr } from '../Components/navbar'
 
 
 
@@ -10,7 +10,7 @@ import { Navbar } from '../Components/navbar'
         {
             return(
                 <div>
-                    <Navbar/>
+                    <Navbarr/>
                     Advisor login page
                     <Footer/>
                 </div>

@@ -12,6 +12,8 @@ import { Logininvs } from './Pages/Logininvs';
 import { Loginadv } from './Pages/Loginadv';
 import { Dashboardinvs } from './Pages/Dashboardinvs';
 import { Dashboardadv } from './Pages/Dashboardadv';
+import { ClientList } from './Pages/ClientList';
+
 
 
 const router = createBrowserRouter([
@@ -38,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "dashboardadv",
     element: <Dashboardadv/>,
+  },
+  {
+    path: "clientlist",
+    element: <ClientList/>,
   },
 ]);
 

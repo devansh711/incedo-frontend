@@ -1,6 +1,10 @@
 import React,{Component} from 'react'
 import { Footer } from '../Components/footer'
-import { Navbar } from '../Components/navbar'
+import { Navbarr } from '../Components/navbar'
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 
 
 
@@ -9,11 +13,53 @@ import { Navbar } from '../Components/navbar'
         render()
         {
             return(
-                <div>
-                    <Navbar/>
-                    Invester login page
+               
+<>
+<Navbarr/>
+<div className='container'>
+ 
+
+                    
+                  
+
+                   <Col md={{ span: 6, offset: 3 }}>
+                   <h3>Invester login page</h3> 
+                    <Form>
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Label column sm={2}>
+          Email
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="email" placeholder="Email" />
+        </Col>
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+        <Form.Label column sm={2}>
+          Password
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="password" placeholder="Password" />
+        </Col>
+      </Form.Group>
+      
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
+        <Col sm={{ span: 10, offset: 2 }}>
+          <Form.Check label="Remember me" />
+        </Col>
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3">
+        <Col sm={{ span: 10, offset: 2 }}>
+          <Button type="submit">Sign in</Button>
+        </Col>
+      </Form.Group>
+    </Form>
+    </Col>
                     <Footer/>
-                </div>
+                    
+ </div>
+ </>
             )
         }
 }
